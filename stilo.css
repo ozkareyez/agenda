@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 40px 0;
+
+       
+}
+ h1{
+    text-align: center;
+}
+.contenedor{
+background-color: #ddeaeb;
+align-content: center;
+text-align: center;
+color: #424040;
+}
+
+
+select, input[type="date"], button {
+    padding: 8px 12px;
+    margin: 8px 4px;
+    border-radius: 5px;
+    border: 1px solid #686464;
+    font-size: 16px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 30px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #fff;
+ 
+}
+span{
+
+    
+ 
+
+}
+
+.formulario{
+background-color: #727473;
+
+}
+
+.horas {
+    margin: 0;
+}
+
+.hora {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.hora:hover, .hora:focus {
+    background: #0df020;
+    scale: 1.2;
+}
+
+#resultado {
+ display: none;
+    margin: 1px 0 0 0;
+    font-weight: bold;
+    color: #2ecc71;
+    font-size: 18px;
+}
+
+#confirmar {
+    background: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.2s;
+}
+
+#confirmar:hover {
+    background: #27ae60;
+    
+}
+.img-profesional {
+    width: 100px;
+    height: 100px;
+    border-radius:10px ;
+    margin: 8px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    
+}
+
+.img-profesional.seleccionado {
+    border: 3px solid #2ecc71;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icono.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Agenda Citas">
+
+</head>
+<body>
+  <h1>Reserva tu cita</h1>
+  <div class="contenedor">
+     <form id="formulario" class="formulario"></form>
+
+   <div id="profesionales">
+            <h2>Selecciona profesional</h2>
+            <img src="1.avif" alt="Ana" class="img-profesional" data-nombre="Ana">
+            <img src="2.jpg" alt="Luis" class="img-profesional" data-nombre="Luis">
+        </div>
+
+         <select id="servicio">
+            <option value="Corte">Corte</option>
+            <option value="Color">Color</option>
+             <option value="barba">Barba</option>
+            <option value="cejas">Cejas</option>
+        </select>
+        <input type="date" id="fecha">
+        <div id="container"></div>
+        <span id="resultado"></span> 
+
+         <input type="text" id="nombre" placeholder="Nombre" required><br>
+        <input type="tel" id="telefono" placeholder="Teléfono" required><br>
+        <input type="email" id="correo" placeholder="Correo" required><br><br>
+        
+
+        <button type="button" id="confirmar">Confirmar cita</button>
+        <!-- <button type="button" id="enviarWhatsapp">Enviar por WhatsApp</button>
+        <button type="button" id="enviarCorreo">Enviar por correo</button> -->
+        <div id="mensaje"></div>
+        
+   
+       
+       
+       
+    </form>
+     
+
+
+  </div>
+
+
+
+
+<script src="script.js"></script>  
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(reg => console.log('Service Worker registrado', reg))
+    .catch(err => console.log('Error al registrar el Service Worker', err));
+}
+</script>  
+</body>
+</html>
